@@ -4,7 +4,7 @@ module clock_divider_by_2 (
     output reg  clk_out   // Divided output clock (e.g., 50 MHz)
 );         
     always @(posedge clk_in or negedge rst_n) begin
-        if (!rst_n) begin
+        if (!rst_n) begin   
             clk_out <= 1'b0;
         end else begin
             clk_out <= ~clk_out; // Toggle on every clock edge
