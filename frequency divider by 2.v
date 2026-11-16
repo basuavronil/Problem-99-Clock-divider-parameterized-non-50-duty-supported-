@@ -1,6 +1,6 @@
 module clock_divider_by_2 (
     input  wire clk_in,   // Input clock (e.g., 100 MHz)
-    input  wire rst_n,    // Asynchronous active-low reset
+    input  wire rst_n,    // Asynchronous active-low reset  
     output reg  clk_out   // Divided output clock (e.g., 50 MHz)
 );
 
